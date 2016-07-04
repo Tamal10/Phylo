@@ -1,0 +1,23 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package phylo;
+
+/**
+ *
+ * @author TAMAL
+ */
+public class Species {
+    String speciesName;
+    char seq[];
+    
+    Species(String name, String seq){
+        speciesName= name;
+        this.seq=seq.toCharArray();
+    }
+    
+    void PrintSpecies(){
+        System.out.println(speciesName +" " + new String(seq));
+    }
+}
