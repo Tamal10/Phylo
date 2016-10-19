@@ -16,7 +16,12 @@ public class Species {
         speciesName= name;
         this.seq=seq.toCharArray();
     }
-    
+    Species()
+    {
+    	speciesName="";
+    	seq=new char[Phylo.seqLen];
+//seq=new char[8];
+    }
     void PrintSpecies(){
         System.out.println(speciesName +" " + new String(seq));
     }
